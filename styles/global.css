@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:hoot {
+    --font-family-asap: "Asap", sans-serif;
+    --font-family-inconsolata: "Inconsolata", monospace;
+    --font-family-mavenPro: "Maven Pro", sans-serif;
+
+    --title-lg: 600 3.5rem/1.2 var(--font-family-asap);
+    --title-md: 600 1.5rem/1.2 var(--font-family-asap);
+    --title-sm: 600 1rem/1.2 var(--font-family-asap);
+
+    --text-subtitle: 400 1.25rem/1.2 var(--font-family-inconsolata);
+
+    --text-md: 400 1rem/1.4 var(--font-family-mavenPro);
+    --text-sm: 400 .875/1.4 var(--font-family-mavenPro);
+
+    --red: #E3646E;
+    --purple: #BB72E9;
+    --blue: #3996DB;
+    --green: #82BC4F;
+    --yellow: #EABD5F;
+
+    --gray-100: #0D0E11;
+    --gray-200: #16181D;
+    --gray-300: #292C34;
+    --gray-400: #878EA1;
+    --gray-500: #C0C4CE;
+    --gray-600: #E2E4E9;
+}
+
+body {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
