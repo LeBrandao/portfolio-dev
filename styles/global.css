@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-:hoot {
+:root {
     --font-family-asap: "Asap", sans-serif;
     --font-family-inconsolata: "Inconsolata", monospace;
     --font-family-mavenPro: "Maven Pro", sans-serif;
@@ -34,9 +34,58 @@
 
 body {
     overflow: hidden;
+    color: var(--gray-600);
+}
+
+header {
+    background-image: url(../assets/img/Background_Intro.png);
+    height: 48.875rem;
+    background-size: cover;
+}
+
+.intro {
+    text-align: center;
+    max-width: 680px;
+    margin: auto;
+
+    & h2 {
+        margin-top: 3.5rem;
+        margin-bottom: .5rem;
+
+        & span {
+            color: var(--red);
+        }
+    }
+    
+    & h1{
+        margin-bottom: 1.25rem;
+        font: var(--title-lg);
+    }
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+.flex,
+.pills {
+    display: flex;
+}
+
+.pills {
+    gap: 1rem;
+    margin-block: 5rem;
+    justify-content: center;
+}
+
+.flex {
+    gap:.5rem;
+    align-items: center;
+}
+
+.pills > .flex {
+    background-color: var(--gray-300);
+    border-radius: 2rem;
+    padding: .5rem 1rem;
 }
