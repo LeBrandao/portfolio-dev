@@ -33,13 +33,11 @@
 }
 
 body {
-    overflow: hidden;
     color: var(--gray-600);
 }
 
 header {
     background-image: url(../assets/img/Background_Intro.png);
-    height: 48.875rem;
     background-size: cover;
 }
 
@@ -73,7 +71,7 @@ img {
     height: auto;
 }
 
-.flex,
+.pill,
 .pills {
     display: flex;
 }
@@ -84,12 +82,12 @@ img {
     justify-content: center;
 }
 
-.flex {
-    gap:.5rem;
+.pill {
     align-items: center;
+    gap: .5rem;
 }
 
-.pills > .flex {
+.pills > .pill {
     background-color: var(--gray-300);
     border-radius: 2rem;
     padding: .5rem 1rem;
@@ -101,5 +99,27 @@ img {
     & .arrow-down {
         margin-bottom: 3.75rem;
         color: var(--gray-400);
+    }
+}
+
+.center {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+    max-width: 1140px;
+    justify-content: center;
+    margin: auto;
+    
+    & div {
+        max-width: 330px;
+        background-color: var(--gray-300);
+        border-radius: .5rem;
+        padding: .75rem;
+        
+    }
+    
+    & img {
+        border-radius: .5rem;
     }
 }
