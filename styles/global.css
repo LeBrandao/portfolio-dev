@@ -204,6 +204,7 @@ footer {
         justify-content: center;
         gap: 1rem;
         flex-direction: column;
+        
 
         & div {
             display: flex;
@@ -211,10 +212,10 @@ footer {
             align-items: center;
             background-color: var(--gray-300);
             width: 400px;
-            margin-bottom: 1rem;
             border-radius: .5rem;
             padding: 20px;
             justify-content: space-between;
+            cursor: pointer;
     
             & img {
                 width: 20px;
