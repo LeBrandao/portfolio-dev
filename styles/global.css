@@ -107,7 +107,7 @@ main {
 
 .title {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: 3rem;
 
     & span {
         color: var(--red);
@@ -183,3 +183,49 @@ main {
     }
 }
 
+footer {
+    background-image: url(../assets/img/Background_Contacts.png);
+    background-size: cover;
+
+    & .title span {
+        color: var(--purple);
+        display: inline-block;
+        margin-top: 4rem;
+    }
+
+    & .title p:nth-child(3){
+        color: var(--gray-500);
+        font-size: var(--text-md);
+    }
+
+    & .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+
+        & div {
+            display: flex;
+            margin: auto;
+            align-items: center;
+            background-color: var(--gray-300);
+            width: 400px;
+            margin-bottom: 1rem;
+            border-radius: .5rem;
+            padding: 20px;
+            justify-content: space-between;
+    
+            & img {
+                width: 20px;
+                height: 20px;
+            }
+
+            & p {
+                margin-left: 12px;
+                margin-right: 12px;
+                width: 100%;
+            }
+        }
+    }
+}
